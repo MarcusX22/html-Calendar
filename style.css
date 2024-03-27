@@ -204,6 +204,10 @@ p {
   color:#000;
   text-shadow:0 0 3px rgba(0, 0, 0, 0.3) ;
 }
+.Title .leave{
+  margin-top: 5%;
+
+}
 #callSubmit{
   font-size: 1rem;
   border-radius: 10px;
@@ -481,15 +485,15 @@ p {
     color: white;
 
   }.sidebar-toggle {
-    margin: 0;
-    position: fixed;
+    margin: 1%;
+    position: absolute;
     top: .5rem;
     right: 1rem;
     font-size: 2rem;
     background: transparent;
     border-color: transparent;
     color: var(--clr-primary-5);
-    transition: var(--transition);
+    /* transition: var(--transition); */
     cursor: pointer;
   }
 
@@ -523,6 +527,7 @@ p {
   #calendar {
     width: 100%;
     margin: auto;
+    margin-left: 2%;
     display: flex;
     flex-wrap: wrap;
   }
