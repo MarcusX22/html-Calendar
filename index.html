@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+</head>
+<body>
+
+  <!-- Leave selection  -->
+  <div class="leaveContainer">
+    <div id="leaveMain">
+        <div class="Title">
+            <button id="leaveCancel">Cancel</button>
+            <h1 id="Title" class="text-slanted">Leave</h1>
+            <button id="leaveSubmit">Done</button>
+        </div>
+        <div class="DateHandler">
+            <button id="dateBack">Back</button>
+            <h2 id="leaveDate" class="Date">March 18, 2024</March></h2>
+            <button id="dateNext">Next</button>
+        </div>
+        <div id="leaveNames" class="Names">
+
+            
+        </div>
+    </div>
+</div>
+
+
+    <!-- Call off selection  -->
+    <div class="Call-Off">
+        <div class="callOffList">
+            <div class="Title">
+                <button id="callCancel">Cancel</button>
+                <h1 id="Title" class="text-slanted">Call-Offs</h1>
+                <button id="callSubmit">Done</button>
+            </div>
+            <div>
+                <h2 id="callDate" class="Date">March 18, 2024</March></h2>
+            </div>
+            <div id="CallNames" class="Names">
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- show who is going home on click -->
+    <div class="goingContainer">
+        <div class="goingMain">
+            <div class="Title">
+                <button id="goCancel">Cancel</button>
+                <h1 id="Title" class="text-slanted">Going Home</h1>
+                <button id="goDone">Done</button>
+            </div>
+            <div>
+                <h2 id="goDate" class="Date">March 18, 2024</March></h2>
+            </div>
+            <div id="GoingNames" class="goNames">
+
+                
+            </div>
+           
+           
+        </div>
+        
+
+    </div>
+
+    <div class="sidebar-overlay">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+      
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+              </button>
+        </div>
+        <!-- links -->
+        <div class="links text-slanted">
+           <button id="addCallOff" class="text-slanted">Add / Remove Call-Off</button>
+           <button id="addLeave" class="text-slanted">Add / Remove Leave</button>        
+           <button id="todaysList" class="text-slanted">Today's Lists</button>
+        </div>
+      </aside>
+    </div>
+<div id="main-container">
+    <button class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    <div id="container">
+      
+        <div id="header">
+           
+            <div id="monthDisplay"></div>
+            <div>
+                <button class="navigate" id="backButton">Back</button>
+                <button class='navigate' id="nextButton">Next</button>
+            </div>
+        </div>
+        <div id="weekdays">
+            <div>Sunday</div>
+            <div>Monday</div>
+            <div>Tuesday</div>
+            <div>Wednesday</div>
+            <div>Thursday</div>
+            <div>Friday</div>
+            <div>Saturday</div>
+        </div>
+
+        <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+        <h2>New Event</h2>
+        <input id="eventTitleInput" placeholder="Event Title" />
+        <button id="saveButton">Save</button>
+        <button id="cancelButton">Cancel</button>
+    </div>
+
+    <div id="deleteEventModal">
+        <h2>Event</h2>
+        <p id="eventText"></p>
+        <button id="deleteButton">Delete</button>
+        <button id="closeButton">Close</button>
+    </div>
+    <div id="modalBackDrop"></div>
+
+
+
+
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
