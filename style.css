@@ -197,6 +197,7 @@ p {
   display: flex;
   justify-content: center;
   overflow: hidden;
+  padding-bottom: 100px;
 }
 
 .Title h1{
@@ -359,13 +360,13 @@ p {
   flex-direction: column;
 
 }
-.Names button:hover{
+/* .Names button:hover{
   background-color: var(--clr-grey-6);
   color: #fff;
   border-radius: 3px;
 
 
-}
+} */
 
 .sidebar-toggle:hover {
   color: var(--clr-primary-7);
@@ -584,7 +585,7 @@ p {
     background-color: #FFFCFF !important;
     box-shadow: none !important;
   }
-  #newEventModal, #deleteEventModal {
+  /* #newEventModal, #deleteEventModal {
     display: none;
     z-index: 20;
     padding: 25px;
@@ -595,7 +596,7 @@ p {
     height: 100vh;
     /* top: 100px; */
     /* left: calc(50% - 175px); */
-    position: absolute;
+    /* position: absolute;
     font-family: sans-serif;
   }
   #eventTitleInput {
@@ -607,13 +608,13 @@ p {
     outline: none;
     border: none;
     box-shadow: 0px 0px 3px gray;
-  }
+  } */
   #eventTitleInput.error {
     border: 2px solid red;
   }
   #cancelButton, #deleteButton {
     background-color: #d36c6c;
-  }
+  } */
   #saveButton, #closeButton {
     background-color: #92a1d1;
   }
@@ -629,4 +630,80 @@ p {
     height: 100vh;
     position: absolute;
     background-color: rgba(0,0,0,0.8);
+  }
+
+  @media screen and (min-width: 780px){
+  
+    h1{
+      font-size:1.75rem;
+    }
+    #container{
+      width:770px;
+      margin-top: 4%;
+    }
+    #weekdays div{
+      font-size: 1rem;
+      margin-left: 0;
+    }
+    .day{
+      width: 100px;
+      height: 150px;
+      padding: 10px;
+
+    }
+    #calendar{
+      margin-left: 0;
+    }
+    #main-container {
+      display: flex;
+      width: 100%;
+      flex-direction: inherit;
+    
+    }
+    .event{
+      font-size:10px;
+    }
+    .eventLeave{
+      font-size:10px;
+    }
+    .eventCO{
+      font-size:10px;
+    }
+    #goDone{
+      font-size: 1.5rem;
+      margin-left: 30%;
+    }
+    #goCancel{
+      font-size: 1.5rem;
+      margin-right: 30%;
+    }
+    #leaveSubmit{
+      font-size: 1.5rem;
+      margin-left: 30%;
+    }
+    #leaveCancel{
+      font-size: 1.5rem;
+      margin-right: 30%;
+    }
+    #callSubmit{
+      font-size: 1.5rem;
+      margin-left: 30%;
+    }
+    #callCancel{
+      font-size: 1.5rem;
+      margin-right: 30%;
+    }
+    .Title{
+      padding-top:0;
+
+    }
+    .Title .leave{
+      margin-top: 1.5%;
+    
+    }
+  }
+  @media screen and (min-width: 410px){
+    .Title .leave{
+      margin-top: 2%;
+    }
   }
